@@ -16,10 +16,12 @@ function encriptar(){
             document.querySelector(".container_no_found").style.display = "none";
             document.querySelector(".textarea-resultado").style.display = "block";
             document.querySelector(".copiar").style.display = "block";
+            document.querySelector(".footer").style.top = "950px";
         } else {
             document.querySelector(".container_no_found").style.display = "block";
             document.querySelector(".textarea-resultado").style.display = "none";
             document.querySelector(".copiar").style.display = "none";
+            document.querySelector(".footer").style.top = "800px";
         }
     }
     var boton1 = document.querySelector("#encriptar"); boton1.onclick = encriptar;
@@ -33,10 +35,12 @@ function encriptar(){
             document.querySelector(".container_no_found").style.display = "none";
             document.querySelector(".textarea-resultado").style.display = "block";
             document.querySelector(".copiar").style.display = "block";
+            document.querySelector(".footer").style.top = "950px";
         } else {
             document.querySelector(".container_no_found").style.display = "block";
             document.querySelector(".textarea-resultado").style.display = "none";
             document.querySelector(".copiar").style.display = "none";
+            document.querySelector(".footer").style.top = "800px";
         } 
     }
     var boton2 = document.querySelector("#desencriptar"); boton2.onclick = desencriptar;
