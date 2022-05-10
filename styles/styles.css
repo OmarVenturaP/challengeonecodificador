@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* definir paleta de colores */
+:root {
+    --principal: #0A3871;
+    --secundario: #fff;
+    --fondo: #E5E5E5;
+    --img: filter: invert(19%) sepia(79%) saturate(1137%) hue-rotate(184deg) brightness(89%) contrast(100%);
+}
+body {
+    color: --principal;
+    font-family: 'Inter', sans-serif;
+    background: var(--fondo);
+    display: grid;
+}
+main {
+    position: absolute;
+}
+img {
+    color: var(--img);
+}
+.logo {
+    position: absolute;
+    width: 31.09px;
+    height: 48px;
+    top: 30px;
+    left: 44px;
+}
+.textarea {
+    position: relative;
+    width: 577px;
+    height: 300px;
+    top: 168px;
+    left: 200px;
+    border: none;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: var(--principal);
+}
+.alert {
+    position: relative;
+    top: 230px;
+    left: 170px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+i {
+    margin: 0 10px;
+    color: var(--principal);
+}
+.parr {
+    line-height: 16px;
+    color: var(--principal);
+}
+
+/* diseño, tamaños y colores de los botones */
+.div_button {
+    position: absolute;
+    top: 560px;
+    left: 150px;
+    display: flex;
+}
+.div_button > button {
+    width: 300px;
+    height: 60px;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 22px;
+    display: flex;
+    border: 1px solid var(--principal);
+    /* texto dentro de buttons */
+    justify-content: center;
+    font-size: medium;
+}
+.encriptar {
+    background: var(--principal);
+    color: var(--secundario);
+}
+.encriptar:hover {
+    background: var(--secundario);
+    color: var(--principal);
+}
+.desencriptar:hover {
+    background: var(--secundario);
+    color: var(--principal);
+}
+.desencriptar {
+    background: var(--fondo);
+    margin: 0px 24px;
+    color: var(--principal);
+}
+aside {
+    position: relative;
+    background: var(--secundario);
+    width: 330px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 990px;
+    border-radius: 32px;
+    color: var(--principal);
+    box-shadow: 3px 3px 3px #0a387136;
+}
+.container_no_found {
+    position: relative;
+    margin: 100px auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.container_no_found > img {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.container_no_found > p {
+    position: relative;
+    margin: 10px;
+    top: 10px;
+}
+.texto_no_encontrado {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 800;
+}
+.ingresar_texto {
+    font-size: 12px;
+    text-align: center;
+}
+.textarea-resultado {
+    position: absolute;
+    background: var(--secundario);
+    width: 90%;
+    height: 90%;
+    left: 15px;
+    right: 15px;
+    top: 30px;
+    border: none;
+    text-align: justify;
+
+    font-size: 25px;
+    display: none;
+}
+
+/* responsive tabet */
+@media only screen and (max-width: 768px) {
+    main {
+        left: 0;
+        right: 0;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 4%;
+        height: auto;
+        left: 48%;
+        right: 48%;
+    }
+    .textarea {
+        position: relative;
+        width: 90%;
+        left: 5%;
+        right: auto;
+    }
+    .alert {
+        position: relative;
+        top: 220px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        left: auto;
+    }
+    i {
+        margin-left: 40px;
+    }
+    .parr {
+        line-height: 16px;
+    }
+    
+    /* diseño, tamaños y colores de los botones */
+    .div_button {
+        padding-left: 15px;
+        width: 100%;
+        position: absolute;
+        top: 550px;
+        left: auto;
+        right: auto;
+        justify-content: center;
+    }
+    .div_button > button {
+        width: 42%;
+        height: 50px;
+        padding: auto;
+    }
+    .encriptar {
+        padding: auto;
+        line-height: 8px;
+    
+    }
+    .desencriptar {
+        padding: auto;
+        line-height: 8px;
+    }
+    aside {
+        top: 300px;
+        left: auto;
+        right: auto;
+        margin: auto;
+        width: 90%;
+        height: auto;
+    }
+    .container_no_found {
+        margin: 35px auto;
+    }
+    .container_no_found > img {
+        display: none;
+    }
+    .textarea-resultado {
+        position: relative;
+        width: 90%;
+        height: auto;
+        top: -100px;
+        left: 5%;
+        right: 5%;
+        border: 1px solid var(--principal);
+        display: none;
+    }
+}
